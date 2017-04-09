@@ -6,12 +6,25 @@
 
 body {
   background-color: white;
+  -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
   font-family: Impact, "Charcoal", sans-serif;
   letter-spacing: 5px;
 }
 
+@-webkit-keyframes mymove {
+    50% {background-color: #D8D8D8;}
+}
 h1 {
-  color: black;
+  color: #F6D8CE;
+  text-align: center;
+  display: inline-block;
+}
+
+header {
+  height:40px;
+  background:black;
+  padding: 10px;
   text-align: center;
 }
 
@@ -21,7 +34,7 @@ h1 {
   margin-left: 32%;
   width: 500px;
   height: 500px;
-  background-color: #58D3F7;
+  background-color: #F5BCA9;
 }
 
 #vibora {
@@ -35,14 +48,15 @@ h1 {
   position: absolute;
   width: 25px;
   height: 25px;
-  background-color: black; 
+  background-color: black;
 }
 
 button {
-  width: 80px;
+  width: 100px;
   padding: 5px;
   margin-top: 570px;
   margin-left: 47%;
   font-weight: 600;
   color: black;
+  border-radius: 28px;
 }
