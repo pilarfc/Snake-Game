@@ -1,0 +1,48 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  background-color: white;
+  font-family: Impact, "Charcoal", sans-serif;
+  letter-spacing: 5px;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+}
+
+#tabla {
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 32%;
+  width: 500px;
+  height: 500px;
+  background-color: #58D3F7;
+}
+
+#vibora {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: black;
+}
+
+#comida {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: black; 
+}
+
+button {
+  width: 80px;
+  padding: 5px;
+  margin-top: 570px;
+  margin-left: 47%;
+  font-weight: 600;
+  color: black;
+}
