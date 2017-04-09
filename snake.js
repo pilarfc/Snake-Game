@@ -1,12 +1,13 @@
 
 var vibora = document.getElementById("vibora");
 var tablero = document.getElementById("tabla");
-//var comidaVibora = document.getElementById("comida");
+var comidaVibora = document.getElementById("comida");
 var posicionX = 0;
 var posicionY = 0;
-//var posicionXcomida = 10;
-//var posicionYcomida = 10;
+var posicionXcomida = Math.floor(Math.random());
+var posicionYcomida = Math.floor(Math.random());
 var desplazamiento = 25;
+var serpienteComida = [];
 
 
 function viboraEnMovimiento (event) { // Esta estructura viene explicada en Mozilla.
@@ -50,9 +51,6 @@ function viboraEnMovimiento (event) { // Esta estructura viene explicada en Mozi
   }
 }
 
-/*function comida (){
-
-} */
 
 function perder () {
   alert ("¡Perdiste! :( Vuelve a intentarlo.")
