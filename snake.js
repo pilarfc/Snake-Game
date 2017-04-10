@@ -4,11 +4,10 @@ var tablero = document.getElementById("tabla");
 var comidaVibora = document.getElementById("comida");
 var posicionX = 0;
 var posicionY = 0;
-var posicionXcomida = Math.floor(Math.random());
-var posicionYcomida = Math.floor(Math.random());
 var desplazamiento = 25;
 var serpienteComida = [];
 
+comida(); // Para que desde el inicio del juego se poga comida. 
 
 function viboraEnMovimiento (event) { // Esta estructura viene explicada en Mozilla.
   switch (event.which) {
@@ -52,6 +51,14 @@ function viboraEnMovimiento (event) { // Esta estructura viene explicada en Mozi
 }
 
 
+function comida () {
+  var posicionXcomida = Math.floor((Math.random()*(400))/100)*100;
+  var posicionYcomida = Math.floor((Math.random()*(400))/100)*100;
+  comidaVibora.style.marginLeft= posicionXcomida +"px";
+  comidaVibora.style.marginTop= posicionYcomida+"px";
+}
+
+
 function perder () {
   alert ("¡Perdiste! :( Vuelve a intentarlo.")
   detenerMovimiento();
@@ -63,6 +70,7 @@ function detenerMovimiento () {
 
 function reiniciarJuego () {
   location.reload();
+  comida();
 }
 
 
